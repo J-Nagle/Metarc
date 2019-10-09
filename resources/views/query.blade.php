@@ -16,7 +16,7 @@
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik:300,400&display=swap">
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata&display=swap">
 
-		<link rel="stylesheet" href="css/design.css">
+		<link rel="stylesheet" href="/css/design.css">
 	</head>
 	<body>
 		<h1 class="display-1 mt-4">Metarc</h1>
