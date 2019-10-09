@@ -68,19 +68,17 @@
 					get: function(){
 						var clean = encodeURIComponent(this.source.split(".com").pop());
 						this.$router.push(clean);
-						axios.get(clean + "?return=update").then(
-							response => (
-								this.api = response;
-								if("user" in response){
-									var sent = clean.split('/')[0];
-									if(response.user.screen_name != sent){
-										var real = '/' + response.user.screen_name + "/status/" + clean.split('/').pop();
-										this.$router.push(real);
-										this.source = "https://twitter.com" + real;
-									}
+						axios.get(clean + "?return=update").then(function(response){
+							this.api = response;
+							if("user" in response){
+								var sent = clean.split('/')[0];
+								if(response.user.screen_name != sent){
+									var real = '/' + response.user.screen_name + "/status/" + clean.split('/').pop();
+									this.$router.push(real);
+									this.source = "https://twitter.com" + real;
 								}
-							)
-						);
+							}
+						});
 					}
 				}
 			})
