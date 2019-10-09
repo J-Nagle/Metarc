@@ -17,8 +17,9 @@ class Query extends Controller {
 
 		$get = curl_init();
 		curl_setopt_array($get,[
-			CURLOPT_URL			=> $api,
-			CURLOPT_HTTPHEADER	=> ["authorization: Bearer ".env("TWITTER_BEARER")]
+			CURLOPT_URL				=> $api,
+			CURLOPT_HTTPHEADER		=> ["authorization: Bearer ".env("TWITTER_BEARER")],
+			CURLOPT_RETURNTRANSFER	=> true
 		]);
 		$output = curl_exec($get);
 		curl_close($get);
