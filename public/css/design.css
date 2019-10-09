@@ -1,0 +1,33 @@
+body {
+  padding: 1rem;
+  background: #eef9ff;
+  color: #110600;
+  font-family: Rubik, Arial, sans-serif;
+}
+
+h1 {
+  font: 300 4rem Coda, cursive;
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+}
+
+.btn-primary {
+  border-color: #1a91da;
+  background-color: #1da1f2;
+}
+
+.btn-primary:hover {
+  background-color: #1a91da;
+}
+
+#data {
+  border: thin solid #ddd;
+  background: #eee;
+  color: #222;
+  font-family: Inconsolata, monospace;
+  white-space: pre-wrap;
+}
+

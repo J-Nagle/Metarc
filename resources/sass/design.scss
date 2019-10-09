@@ -1,0 +1,39 @@
+@mixin centre {
+	text-align: center;
+}
+
+$primary-color: #1da1f2;
+$secondary-color: #1a91da;
+
+body {
+	padding: 1rem;
+	background: #eef9ff;
+	color: #110600;
+	font-family: Rubik,Arial,sans-serif;
+}
+
+h1 {
+	font: 300 4rem Coda,cursive;
+	@include centre;
+}
+
+h2 {
+	@include centre;
+}
+
+.btn-primary {
+	border-color: $secondary-color;
+	background-color: $primary-color;
+}
+
+.btn-primary:hover {
+	background-color: $secondary-color;
+}
+
+#data {
+	border: thin solid #ddd;
+	background: #eee;
+	color: #222;
+	font-family: Inconsolata,monospace;
+	white-space: pre-wrap;
+}

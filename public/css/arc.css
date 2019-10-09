@@ -1,0 +1,20 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 1rem;
+  background: #141418;
+  color: #eaeae7;
+  font: 1rem Montserrat, Arial, sans-serif;
+}
+
+.title {
+  font: 300 4rem Comfortaa, cursive;
+  text-align: center;
+}
+
+.subtitle {
+  font-weight: 300;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
