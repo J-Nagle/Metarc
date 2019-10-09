@@ -53,7 +53,7 @@
 				el: "main",
 				data: {
 					toggle:		"Hide",
-					source: 	{{ $url }},
+					source: 	"{{ $url }}",
 					api:		{{ $json }}
 				}
 				methods: {

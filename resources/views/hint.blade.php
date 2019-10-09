@@ -5,9 +5,9 @@
 							<h3>Try these</h3>
 						</div>
 						<div class="col-1">
-							<button type="button" data-toggle="collapse" data-target="#sample" @click="flip"
+							<button type="button" data-toggle="collapse" data-target="#sample"
 							class="btn btn-primary btn-sm">
-								@{{ toggle }}
+								Hide
 							</button>
 						</div>
 					</div>
