@@ -78,7 +78,7 @@
 									this.source = "https://twitter.com" + real;
 								}
 							}
-						}).bind(this);
+						}.bind(this));
 					}
 				}
 			})
