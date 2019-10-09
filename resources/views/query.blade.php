@@ -46,7 +46,7 @@
 			</div>
 		</main>
 		<script>
-			const router = new VueRouter({routes})
+			const router = new VueRouter({mode: "history"})
 
 			const Metarc = new Vue({
 				router,
