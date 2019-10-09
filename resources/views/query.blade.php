@@ -28,11 +28,11 @@
 					<form>
 						<div class="form-group">
 							<label for="source" class="h3">Enter a Twitter account or tweet URL</label>
-							<input id="source" name="source" v-model="source" type="url" required
+							<input id="source" name="source" v-model="source" type="url" autofocus required
 							placeholder="https://twitter.com/TeamYouTube/status/1176645711691010048" 
 							class="form-control form-control-lg">
 						</div>
-						<button type="submit" @click.prevent="get" class="btn btn-primary btn-lg btn-block">Request</button>
+						<input type="submit" @click.prevent="get" class="btn btn-primary btn-lg btn-block" value="Request">
 					</form>
 				</div>
 			</div>
