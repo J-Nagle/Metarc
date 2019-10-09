@@ -21,7 +21,7 @@ class Query extends Controller {
 			CURLOPT_HTTPHEADER		=> ["authorization: Bearer ".env("TWITTER_BEARER")],
 			CURLOPT_RETURNTRANSFER	=> true
 		]);
-		$output = curl_exec($get);
+		$output = json_encode(json_decode(curl_exec($get)),JSON_PRETTY_PRINT);
 		curl_close($get);
 
 		return $output;

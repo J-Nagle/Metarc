@@ -1,3 +1,3 @@
-# Secantt
+# Metarc
 
-A modern video content management system
+A Twitter metadata viewer
