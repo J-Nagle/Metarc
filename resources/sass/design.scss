@@ -30,6 +30,14 @@ h2 {
 	background-color: $secondary-color;
 }
 
+a {
+	color: $primary-color;
+}
+
+a:hover {
+	color: $secondary-color;
+}
+
 #data {
 	border: thin solid #ddd;
 	background: #eee;
