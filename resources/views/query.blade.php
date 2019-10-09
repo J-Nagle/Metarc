@@ -54,7 +54,7 @@
 				data: {
 					toggle:		"Hide",
 					source: 	"{{ $url }}",
-					api:		{{ $json }}
+					api:		@json($json)
 				},
 				methods: {
 					flip: function(){
