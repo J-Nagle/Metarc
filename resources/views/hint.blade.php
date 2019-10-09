@@ -15,33 +15,33 @@
 						<div class="col">
 							<h4><a href="https://twitter.com/ID_AA_Carmack" target="_blank">John Carmack</a></h4>
 							<button type="button" data-request="https://twitter.com/ID_AA_Carmack"
-							@click="fill($e)" class="btn btn-primary btn-block preset">
+							@click="fill($event)" class="btn btn-primary btn-block preset">
 								Account info
 							</button>
 							<button data-request="https://twitter.com/ID_AA_Carmack/status/1175451382163398656"
-							@click="fill($e)" class="btn btn-primary btn-block preset">
+							@click="fill($event)" class="btn btn-primary btn-block preset">
 								Sample tweet
 							</button>
 						</div>
 						<div class="col">
 							<h4><a href="https://twitter.com/surface" target="_blank">Microsoft Surface</a></h4>
 							<button type="button" data-request="https://twitter.com/surface"
-							@click="fill($e)" class="btn btn-primary btn-block preset">
+							@click="fill($event)" class="btn btn-primary btn-block preset">
 								Account info
 							</button>
 							<button type="button" data-request="https://twitter.com/surface/status/1179079054420594689"
-							@click="fill($e)" class="btn btn-primary btn-block preset">
+							@click="fill($event)" class="btn btn-primary btn-block preset">
 								Sample tweet
 							</button>
 						</div>
 						<div class="col">
 							<h4><a href="https://twitter.com/tomshardware" target="_blank">Tom's Hardware</a></h4>
 							<button type="button" data-request="https://twitter.com/tomshardware"
-							@click="fill($e)" class="btn btn-primary btn-block preset">
+							@click="fill($event)" class="btn btn-primary btn-block preset">
 								Account info
 							</button>
 							<button type="button" data-request="https://twitter.com/tomshardware/status/1177949834961195008"
-							@click="fill($e)" class="btn btn-primary btn-block preset">
+							@click="fill($event)" class="btn btn-primary btn-block preset">
 								Sample tweet
 							</button>
 						</div>

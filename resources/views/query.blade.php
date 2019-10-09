@@ -29,7 +29,7 @@
 						<div class="form-group">
 							<label for="source" class="h3">Enter a Twitter account or tweet URL</label>
 							<input id="source" name="source" v-model="source" type="url" autofocus required
-							placeholder="https://twitter.com/TeamYouTube/status/1176645711691010048" 
+							placeholder="https://twitter.com/TeamYouTube/status/1176645711691010048" spellcheck="false"
 							class="form-control form-control-lg">
 						</div>
 						<button type="submit" @click.prevent="get" class="btn btn-primary btn-lg btn-block">Request</button>
@@ -67,9 +67,9 @@
 					},
 					get: function(){
 						var clean = this.source.split(".com/").pop();
-						this.$router.push(clean);
+						this.$router.push('/' + clean);
 						axios.get('/' + clean + "?return=update").then(function(response){
-							this.api = response;
+							this.api = response.data;
 							if("user" in response){
 								var sent = clean.split('/')[0];
 								if(response.user.screen_name != sent){
@@ -78,7 +78,7 @@
 									this.source = "https://twitter.com" + real;
 								}
 							}
-						});
+						}).bind(this);
 					}
 				}
 			})
