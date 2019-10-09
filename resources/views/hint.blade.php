@@ -13,7 +13,7 @@
 					</div>
 					<div id="sample" class="row collapse show">
 						<div class="col">
-							<a href="https://twitter.com/ID_AA_Carmack" class="h4">John Carmack</a>
+							<h4><a href="https://twitter.com/ID_AA_Carmack" class="h4">John Carmack</a></h4>
 							<button type="button" data-request="https://twitter.com/ID_AA_Carmack"
 							@click="fill($e)" class="btn btn-primary btn-block preset">
 								Account info
@@ -24,7 +24,7 @@
 							</button>
 						</div>
 						<div class="col">
-							<a href="https://twitter.com/surface" class="h4">Microsoft Surface</a>
+							<h4><a href="https://twitter.com/surface" class="h4">Microsoft Surface</a></h4>
 							<button type="button" data-request="https://twitter.com/surface"
 							@click="fill($e)" class="btn btn-primary btn-block preset">
 								Account info
@@ -35,7 +35,7 @@
 							</button>
 						</div>
 						<div class="col">
-							<a href="https://twitter.com/tomshardware" class="h4">Tom's Hardware</a>
+							<h4><a href="https://twitter.com/tomshardware" class="h4">Tom's Hardware</a></h4>
 							<button type="button" data-request="https://twitter.com/tomshardware"
 							@click="fill($e)" class="btn btn-primary btn-block preset">
 								Account info

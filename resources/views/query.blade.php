@@ -55,7 +55,7 @@
 					toggle:		"Hide",
 					source: 	"{{ $url }}",
 					api:		{{ $json }}
-				}
+				},
 				methods: {
 					flip: function(){
 						this.toggle = "Show";
