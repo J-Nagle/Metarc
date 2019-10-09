@@ -68,7 +68,7 @@
 					get: function(){
 						var clean = this.source.split(".com/").pop();
 						this.$router.push(clean);
-						axios.get(encodeURIComponent(clean) + "?return=update").then(function(response){
+						axios.get('/' + clean + "?return=update").then(function(response){
 							this.api = response;
 							if("user" in response){
 								var sent = clean.split('/')[0];
