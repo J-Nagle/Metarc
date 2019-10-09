@@ -70,6 +70,7 @@
 						this.$router.push('/' + clean);
 						axios.get('/' + clean + "?return=update").then(function(response){
 							this.api = response.data;
+							/* Fix tweet requests with the wrong username
 							if("user" in response){
 								var sent = clean.split('/')[0];
 								if(response.user.screen_name != sent){
@@ -77,7 +78,7 @@
 									this.$router.push(real);
 									this.source = "https://twitter.com" + real;
 								}
-							}
+							}*/
 						}.bind(this));
 					}
 				}
