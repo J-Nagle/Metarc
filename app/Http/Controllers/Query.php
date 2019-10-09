@@ -27,7 +27,7 @@ class Query extends Controller {
 	}
 
 	public function __invoke(Request $r,$account = false,$tweet = false){
-		$source	= $r->url() ? "https://twitter.com/".$r->url() : "";
+		$source	= $r->path() ? "https://twitter.com/".$r->path() : "";
 		$type	= "";
 		$json	= "{}";
 
